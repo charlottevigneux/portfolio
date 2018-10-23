@@ -1,0 +1,38 @@
+@import "./variables";
+@import "./bp";
+
+body {
+  color: $mainRed;
+  @include tablet {
+    color: blue;
+  }
+  @include desktop {
+    color: hotpink;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background: green;
+
+  @include tablet {
+    width: 75%;
+    background: purple;
+  }
+
+  @include desktop {
+    width: 949px;
+    background: yellowgreen;
+  }
+}
+
+.mainTitle {
+  font-size: 18px;
+  @include tablet {
+    font-size: 24px;
+  }
+  @include desktop {
+    font-size: 32px;
+  }
+}
